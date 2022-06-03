@@ -12,7 +12,6 @@ iOS In App Push Provisioning Sample
 Apple In App Provisioning is the way to provision your card to apple wallet.
 
 ## Getting started
-Configure VGSShow Sample :
 - Clone repository
 ```groovy
 git clone git@github.com:solidfi/ios-iap.git
