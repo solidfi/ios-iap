@@ -10,7 +10,7 @@ iOS In App Push Provisioning Sample
 
 
 ## Overview
-Apple In App Provisioning is the way to provision your card to apple wallet.
+Apple In App Provisioning is the way to provision your card to Apple Wallet.
 
 
 ## Getting started
@@ -24,13 +24,15 @@ git clone https://github.com/solidfi/ios-iap.git
 
 
 ## Prerequisite
-- Request for the Apple Pay Entitlements to : applepayentitlements@apple.com
+- To get started, your Apple developer account owner should send an email to Apple Pay Entitlements ( applepayentitlements@apple.com) requesting to enable Apple Pay push provisioning for the App:
+     -- App name (as it appears on AppStore Connect)
+     -- Developer team ID
+     -- Bundle ID: (eg. com.company.appname)
 - Once its granted, to enable In-App Provisioning, visit the Identifiers section for Certificates, Identifiers, and Profiles in Developer account. Edit any required App IDs and enable the In-App Provisioning capability in the new Additional Capabilities tab. Once enabled, the entitlement will automatically be included in newly generated provisioning profiles.
 - Add Wallet capability in Xcode's Signing & Capabilities  
 - After adding capability, add com.apple.developer.payment-pass-provisioning key and set it to true in Wallet entitlements
 
-NOTE: You can test In App Provisioning only in Test flight or App store build. 
-
+NOTE: You cant test In App Provisioning only in Test Flight or App Store build. 
 
 ## Integration Reference
 - Integration reference : https://usermanual.wiki/Document/InApp20Provisioning20Getting20Started20Guide20V123.884317268/view
