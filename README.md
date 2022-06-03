@@ -29,7 +29,7 @@ git clone https://github.com/solidfi/ios-iap.git
 - Add Wallet capability in Xcode's Signing & Capabilities  
 - After adding capability, add com.apple.developer.payment-pass-provisioning key and set it to true in Wallet entitlements
 
-NOTE: You cant test In App Provisioning only in Test flight or App store build. 
+NOTE: You can test In App Provisioning only in Test flight or App store build. 
 
 
 ## Integration Reference
