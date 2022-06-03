@@ -3,7 +3,7 @@ iOS In App Push Provisioning Sample
 
 ## Table of contents
 - [Overview](#overview)
-- [Getting started](#getting-started)
+- [Getting Started](#getting-started)
 - [Prerequisite](#prerequisite)
 - [Integration Reference](#integration-reference)
 - [API Reference](#api-reference)
@@ -13,26 +13,30 @@ iOS In App Push Provisioning Sample
 Apple In App Provisioning is the way to provision your card to Apple Wallet.
 
 
-## Getting started
+## Getting Started
 - Clone repository
 ```groovy
 git clone git@github.com:solidfi/ios-iap.git
 OR
 git clone https://github.com/solidfi/ios-iap.git
 ```
-- Open CardProvisioningVC.swift file
+- Open ```CardProvisioningVC.swift``` file
 
 
 ## Prerequisite
-- To get started, your Apple developer account owner should send an email to Apple Pay Entitlements ( applepayentitlements@apple.com) requesting to enable Apple Pay push provisioning for the App:
-     -- App name (as it appears on AppStore Connect)
-     -- Developer team ID
-     -- Bundle ID: (eg. com.company.appname)
+- To get started, your Apple developer account owner should send an email to Apple Pay Entitlements (applepayentitlements@apple.com) requesting to enable Apple Pay push provisioning for the App:
+```groovy
+  - App name (as it appears on AppStore Connect)
+  - Developer team ID
+  - Bundle ID: (eg. com.company.appname)
+```
 - Once its granted, to enable In-App Provisioning, visit the Identifiers section for Certificates, Identifiers, and Profiles in Developer account. Edit any required App IDs and enable the In-App Provisioning capability in the new Additional Capabilities tab. Once enabled, the entitlement will automatically be included in newly generated provisioning profiles.
 - Add Wallet capability in Xcode's Signing & Capabilities  
-- After adding capability, add com.apple.developer.payment-pass-provisioning key and set it to true in Wallet entitlements
+- After adding capability, add ```com.apple.developer.payment-pass-provisioning``` key and set it to true in Wallet entitlements
 
-NOTE: You cant test In App Provisioning only in Test Flight or App Store build. 
+```groovy
+NOTE: You can test In App Provisioning only in Test Flight or App Store build. 
+```
 
 ## Integration Reference
 - Integration reference : https://usermanual.wiki/Document/InApp20Provisioning20Getting20Started20Guide20V123.884317268/view
