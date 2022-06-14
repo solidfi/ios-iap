@@ -55,20 +55,21 @@ extension CardInfoVC: PKAddPaymentPassViewControllerDelegate {
         let nonceString = nonce.base64EncodedString()
         let nonceSignatureVal = nonceSignature.base64EncodedString()
 
-        //After that, send it to backend...
-        var postBody = CardWalletRequestBody()
-        var aPay = Applepay()
+        //After that, send it to solid backend...
+        var postBody = CardWalletRequestBody()  //Data Model..
+        var aPay = Applepay() //Data Model..
         aPay.nonce = nonceString
         aPay.nonceSignature = nonceSignatureVal
         aPay.deviceCert = certificateLeaf
         postBody.wallet = "applePay"
         postBody.applePay = aPay
 
+        //you need to call Solid API to enroll card with endpoint : "(apiBaseURL)/card/(cardId)/provision"
         APIcalls.enrollCard(cardId: cId, walletData: postBody) { response, errorMessage in
             //you should get values in base64 string from the backend..
-            let payloadData = respCardModel.applePay?.encryptedPassData
-            let activationcode = respCardModel.applePay?.activationData
-            let ephemeralkey = respCardModel.applePay?.ephemeralPublicKey
+            let payloadData = response.applePay?.encryptedPassData
+            let activationcode = response.applePay?.activationData
+            let ephemeralkey = response.applePay?.ephemeralPublicKey
 
             //once you get the response from backend, convert it to base64 data
             let encryptedPassData =  Data(base64Encoded: payloadData ?? "", options: [])
