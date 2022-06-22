@@ -43,4 +43,4 @@ NOTE: You can test In App Provisioning only in Test Flight or App Store build.
 
 
 ## API Reference
-- Solid API Integration : https://documenter.getpostman.com/view/13543869/TWDfEDwX#ce8c0e57-0dcf-45ea-87d8-6f03a302e027
+- Solid API Integration : https://www.solidfi.com/docs/introduction
