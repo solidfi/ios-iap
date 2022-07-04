@@ -24,11 +24,7 @@ git clone https://github.com/solidfi/ios-iap.git
 
 
 ## Prerequisite
-- To get started, your Apple developer account owner should send an email to Apple Pay Entitlements (applepayentitlements@apple.com) requesting to enable Apple Pay push provisioning for the App:
-
-  - App name (as it appears on AppStore Connect)
-  - Developer team ID
-  - Bundle ID: (eg. com.company.appname)
+- To get started, complete the steps as mentioed in : https://help.solidfi.com/hc/en-us/articles/6343456222875
 
 - Once its granted, to enable In-App Provisioning, visit the Identifiers section for Certificates, Identifiers, and Profiles in Developer account. Edit any required profile (or create new one) and select entitlement of the ApplePay In-App Provisioning Distribution. 
 - Add Wallet capability in Xcode's Signing & Capabilities  
