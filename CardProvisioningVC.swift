@@ -16,7 +16,7 @@ class CardProvisioningVC: UIViewController {
 }
 
 // MARK: - Passkit methods
-extension CardInfoVC: PKAddPaymentPassViewControllerDelegate {
+extension CardProvisioningVC: PKAddPaymentPassViewControllerDelegate {
     func checkEligibility() {
         let eligibility = PKAddPaymentPassViewController.canAddPaymentPass()
         let passLibrary = PKPassLibrary.init()
